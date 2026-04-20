@@ -4,7 +4,7 @@ const pricingI18n = {
   badge: { en: 'Pricing', es: 'Precios' },
   heading: { en: 'Investment', es: 'Inversión' },
   sub: { en: 'Clear, upfront pricing in MXN. No hidden fees, just premium quality tailored to your exact scope and needs.', es: 'Precios claros y directos en MXN. Sin tarifas ocultas, solo calidad premium adaptada a tu alcance y necesidades.' },
-  cta: { en: 'Get Started', es: 'Comenzar' },
+  cta: { en: "Let's Talk", es: 'Hablemos' },
   plans: {
     en: [
       {
@@ -12,6 +12,7 @@ const pricingI18n = {
         price: '$700 MXN',
         desc: 'Ideal for quick conversions.',
         features: ['Single page layout', 'Conversion optimized', 'Responsive design', 'Basic SEO setup'],
+        whatsappMsg: "Hi, I'm interested in the Landing Pages plan. Can we discuss some details?",
         color: 'rgba(80,180,140,0.15)'
       },
       {
@@ -19,6 +20,7 @@ const pricingI18n = {
         price: '$1,000 MXN',
         desc: 'Your business, professionalized.',
         features: ['E-Commerce functionality', 'Product catalog', 'Payment gateway', 'Admin dashboard'],
+        whatsappMsg: "Hi, I'm interested in the Online Shop and E-Commerce plan. Can we discuss some details?",
         color: 'rgba(80,120,200,0.15)'
       },
       {
@@ -26,6 +28,7 @@ const pricingI18n = {
         price: 'From $1,500 MXN',
         desc: 'Your brand in your customers\' pockets.',
         features: ['iOS & Android', 'Native performance', 'Push notifications', 'Custom UI/UX'],
+        whatsappMsg: "Hi, I'm interested in the Mobile Apps plan. Can we discuss some details?",
         color: 'rgba(160,80,200,0.15)'
       },
       {
@@ -33,6 +36,7 @@ const pricingI18n = {
         price: 'From $2,500 MXN',
         desc: 'Automate your processes.',
         features: ['Custom architecture', 'API integrations', 'Real-time sync', 'Scalable database'],
+        whatsappMsg: "Hi, I'm interested in discussing a Custom Software project. Can we talk about some details?",
         color: 'rgba(200,140,80,0.15)'
       }
     ],
@@ -42,6 +46,7 @@ const pricingI18n = {
         price: '$700 MXN',
         desc: 'Ideal para conversiones rápidas.',
         features: ['Diseño de una sola página', 'Optimizado para conversión', 'Diseño responsivo', 'Configuración SEO básica'],
+        whatsappMsg: "Hola, me interesa el plan de Landing Pages. ¿Podemos hablar sobre algunos detalles?",
         color: 'rgba(80,180,140,0.15)'
       },
       {
@@ -49,6 +54,7 @@ const pricingI18n = {
         price: '$1,000 MXN',
         desc: 'Tu negocio, profesionalizado.',
         features: ['Funcionalidad E-Commerce', 'Catálogo de productos', 'Pasarela de pago', 'Panel de administración'],
+        whatsappMsg: "Hola, me interesa el plan de Tienda Online y E-Commerce. ¿Podemos hablar sobre algunos detalles?",
         color: 'rgba(80,120,200,0.15)'
       },
       {
@@ -56,6 +62,7 @@ const pricingI18n = {
         price: 'Desde $1,500 MXN',
         desc: 'Tu marca en los bolsillos de tus clientes.',
         features: ['iOS y Android', 'Rendimiento nativo', 'Notificaciones push', 'UI/UX personalizado'],
+        whatsappMsg: "Hola, me interesa el plan de Aplicaciones Móviles. ¿Podemos hablar sobre algunos detalles?",
         color: 'rgba(160,80,200,0.15)'
       },
       {
@@ -63,6 +70,7 @@ const pricingI18n = {
         price: 'Desde $2,500 MXN',
         desc: 'Automatiza tus procesos.',
         features: ['Arquitectura personalizada', 'Integraciones API', 'Sincronización en tiempo real', 'Base de datos escalable'],
+        whatsappMsg: "Hola, me interesa discutir un proyecto de Software Personalizado. ¿Podemos hablar sobre algunos detalles?",
         color: 'rgba(200,140,80,0.15)'
       }
     ]
@@ -124,7 +132,7 @@ function PricingPage() {
                   ))}
                 </div>
 
-                <a href="https://wa.me/522203305165" className="liquid-glass-strong" style={{ width: '100%', marginTop: 32, borderRadius: 9999, padding: '12px 0', background: 'none', border: 'none', textDecoration: 'none', color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 14, fontWeight: 500, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+                <a href={`https://wa.me/522203305165?text=${encodeURIComponent(plan.whatsappMsg)}`} className="liquid-glass-strong" style={{ width: '100%', marginTop: 32, borderRadius: 9999, padding: '12px 0', background: 'none', border: 'none', textDecoration: 'none', color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 14, fontWeight: 500, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
                   {t(pricingI18n.cta, lang)} <ArrowUpRight size={14} />
                 </a>
               </div>
