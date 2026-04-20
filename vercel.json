@@ -3,6 +3,13 @@
   "trailingSlash": false,
   "buildCommand": "exit 0",
   "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/favicon-white.svg", "destination": "/public/favicon-white.svg" },
+    { "source": "/favicon-black.svg", "destination": "/public/favicon-black.svg" },
+    { "source": "/logo.png", "destination": "/public/logo.png" },
+    { "source": "/stripe1.mp4", "destination": "/public/stripe1.mp4" },
+    { "source": "/stripe2.mp4", "destination": "/public/stripe2.mp4" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
