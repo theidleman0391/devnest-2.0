@@ -149,6 +149,13 @@
 <body class="bg-black text-white">
   <div id="root"></div>
 
+  <script>
+    console.log('🚀 Starting app initialization...');
+    window.addEventListener('error', (e) => {
+      console.error('❌ Error:', e.message, e.filename, e.lineno);
+    });
+  </script>
+
   <script type="text/babel" src="devnest/shared.jsx"></script>
   <script type="text/babel" src="devnest/Navbar.jsx"></script>
   <script type="text/babel" src="devnest/Hero.jsx"></script>
