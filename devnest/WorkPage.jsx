@@ -93,7 +93,7 @@ function WorkPage() {
       </div>
 
       {/* BG video — blends into gradient */}
-      <video autoPlay loop muted playsInline src="../public/stripe2.mp4"
+      <video autoPlay loop muted playsInline src="/stripe2.mp4"
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 'auto', objectFit: 'contain', zIndex: 1, mixBlendMode: 'screen', opacity: 0.85 }} />
       {/* Subtle dark overlay for text readability */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '100%', background: 'rgba(0,0,0,0.45)', zIndex: 2, pointerEvents: 'none' }} />

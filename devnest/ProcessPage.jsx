@@ -94,7 +94,7 @@ function ProcessPage() {
   return (
     <div style={{ background: '#000', minHeight: '100vh', paddingTop: 120, position: 'relative', overflow: 'hidden' }}>
       {/* BG video — top-anchored, slow playback */}
-      <video autoPlay loop muted playsInline src="../public/stripe1.mp4"
+      <video autoPlay loop muted playsInline src="/stripe1.mp4"
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 'auto', objectFit: 'contain', zIndex: 0 }} />
       {/* Dark overlay — full video area for readability */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '100%', background: 'rgba(0,0,0,0.72)', zIndex: 1 }} />
