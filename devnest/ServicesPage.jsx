@@ -104,7 +104,7 @@ function ServicesPage() {
         </div>
 
         {/* Service cards */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {services.map(({ num, title, tag, tagline, body, features }, i) => (
             <FadeIn key={num} delay={i * 100} y={32}>
               <div className="liquid-glass" style={{ borderRadius: 20, padding: 'clamp(32px, 4vw, 56px)', display: 'flex', gap: 56, flexWrap: 'wrap', alignItems: 'flex-start' }}>
@@ -119,9 +119,6 @@ function ServicesPage() {
                   <h2 style={{ fontFamily: "'Instrument Serif', serif", fontStyle: 'italic', fontSize: 'clamp(1.8rem, 3.5vw, 2.75rem)', color: 'white', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 8 }}>{title}</h2>
                   <p style={{ fontFamily: "'Barlow', sans-serif", fontStyle: 'italic', fontWeight: 300, fontSize: 14, color: 'rgba(255,255,255,0.5)', marginBottom: 20 }}>{tagline}</p>
                   <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: 15, color: 'rgba(255,255,255,0.65)', lineHeight: 1.75, maxWidth: 480, marginBottom: 32 }}>{body}</p>
-                  <button className="liquid-glass-strong" style={{ borderRadius: 9999, padding: '10px 22px', background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 13, fontWeight: 500, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                    {t(servicesI18n.learnMore, lang)} <ArrowUpRight size={13} />
-                  </button>
                 </div>
 
                 {/* Right: features list */}
