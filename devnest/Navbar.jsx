@@ -70,8 +70,8 @@ function Navbar() {
 
           {/* Logo */}
           <a href="Devnest Landing.html" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
-              <img src="../public/logo.png" alt="Logo" style={{ width: 45, height: 45, objectFit: 'cover', objectPosition: '48% center' }} />
+            <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
+              <img src="../public/logo.png" alt="Logo" style={{ width: 56, height: 56, objectFit: 'cover', objectPosition: '47% center' }} />
             </div>
             <span style={{ fontFamily: "'Instrument Serif', serif", fontStyle: 'italic', fontSize: 20, color: 'white', letterSpacing: '-0.02em' }}>Devnest</span>
           </a>
