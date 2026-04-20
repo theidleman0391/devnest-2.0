@@ -1,6 +1,8 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "buildCommand": "exit 0",
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/(.*)",
