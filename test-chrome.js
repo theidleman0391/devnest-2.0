@@ -1,0 +1,36 @@
+const puppeteer = require('puppeteer');
+
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  
+  page.on('console', msg => {
+    console.log(`[CONSOLE] ${msg.type().toUpperCase()}: ${msg.text()}`);
+  });
+  
+  page.on('pageerror', error => {
+    console.log(`[PAGE ERROR]: ${error.message}`);
+  });
+  
+  page.on('requestfailed', request => {
+    console.log(`[REQUEST FAILED]: ${request.url()} - ${request.failure().errorText}`);
+  });
+
+  try {
+    console.log('Navigating to http://localhost:8080/Devnest%20Landing.html...');
+    await page.goto('http://localhost:8080/Devnest%20Landing.html', { waitUntil: 'networkidle0' });
+    console.log('Finished waiting.');
+  } catch (err) {
+    console.error('[GOTO ERROR]', err);
+  }
+
+  try {
+    console.log('Navigating to http://localhost:8080/Work.html...');
+    await page.goto('http://localhost:8080/Work.html', { waitUntil: 'networkidle0' });
+    console.log('Finished waiting.');
+  } catch (err) {
+    console.error('[GOTO ERROR]', err);
+  }
+
+  await browser.close();
+})();
