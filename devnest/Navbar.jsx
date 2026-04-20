@@ -4,14 +4,14 @@ const { ArrowUpRight, useLang, t } = window;
 
 const NAV_LINKS_I18N = {
   en: [
-    { label: 'Home', href: 'Devnest Landing.html' },
+    { label: 'Home', href: 'index.html' },
     { label: 'Services', href: 'Services.html' },
     { label: 'Work', href: 'Work.html' },
     { label: 'Process', href: 'Process.html' },
     { label: 'Pricing', href: 'Pricing.html' },
   ],
   es: [
-    { label: 'Inicio', href: 'Devnest Landing.html' },
+    { label: 'Inicio', href: 'index.html' },
     { label: 'Servicios', href: 'Services.html' },
     { label: 'Trabajo', href: 'Work.html' },
     { label: 'Proceso', href: 'Process.html' },
@@ -69,7 +69,7 @@ function Navbar() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 12, paddingBottom: 12, maxWidth: 1400, margin: '0 auto' }}>
 
           {/* Logo */}
-          <a href="Devnest Landing.html" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
               <img src="../public/logo.png" alt="Logo" style={{ width: 56, height: 56, objectFit: 'cover', objectPosition: '47% center' }} />
             </div>
@@ -79,7 +79,7 @@ function Navbar() {
           {/* Desktop Nav */}
           <div className="liquid-glass hidden md:flex items-center gap-[2px] rounded-full p-[6px]">
             {NAV_LINKS.map(link => {
-              const isActive = current === link.href || (current === '' && link.href === 'Devnest Landing.html');
+              const isActive = current === link.href || (current === '' && link.href === 'index.html');
               return (
                 <a key={link.href} href={link.href} style={{
                   padding: '8px 14px', fontSize: 13, fontWeight: 500,
@@ -152,7 +152,7 @@ function Navbar() {
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'center' }}>
             {NAV_LINKS.map((link, i) => {
-              const isActive = current === link.href || (current === '' && link.href === 'Devnest Landing.html');
+              const isActive = current === link.href || (current === '' && link.href === 'index.html');
               return (
                 <a
                   key={link.href}
