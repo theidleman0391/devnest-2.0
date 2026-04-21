@@ -154,7 +154,7 @@ function PricingPage() {
         </div>
 
         {/* Custom Work Section */}
-        <FadeIn delay={600} y={40}>
+        <FadeIn delay={0} y={40}>
           <div className="liquid-glass" style={{ borderRadius: 24, padding: '48px 40px', marginTop: 40, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '120%', height: '120%', background: 'radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
             
@@ -170,6 +170,7 @@ function PricingPage() {
             </a>
           </div>
         </FadeIn>
+
 
       </div>
     </div>
