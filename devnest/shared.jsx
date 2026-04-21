@@ -52,12 +52,14 @@ function FadeIn({ children, delay = 0, y = 28, style = {}, className = '' }) {
       ...style,
       opacity: inView ? 1 : 0,
       transform: inView ? 'translateY(0)' : `translateY(${y}px)`,
-      transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`
+      filter: inView ? 'blur(0px)' : 'blur(10px)',
+      transition: `opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, filter 0.8s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms`
     }}>
       {children}
     </div>
   );
 }
+
 
 // ── BlurText ─────────────────────────────────────────────────────────────────
 function BlurText({ text, delay = 100, className = '', animateBy = 'words' }) {
@@ -70,13 +72,14 @@ function BlurText({ text, delay = 100, className = '', animateBy = 'words' }) {
         <span key={i} style={{
           display: 'inline-block',
           marginRight: animateBy === 'words' ? '0.28em' : '0',
-          opacity: inView ? undefined : 0,
+          opacity: 0,
           filter: inView ? undefined : 'blur(10px)',
           transform: inView ? undefined : 'translateY(50px)',
-          animation: inView ? `blurFadeIn 0.7s ease-out ${i * delay}ms forwards` : 'none',
+          animation: inView ? `blurFadeIn 0.7s ease-out ${i * delay}ms both` : 'none',
         }}>
           {el}
         </span>
+
       ))}
     </span>
   );

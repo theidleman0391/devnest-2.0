@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devnest — Process</title>
+  <title>Devnest — Privacidad</title>
   <link rel="icon" type="image/svg+xml" href="/favicon-white.svg" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/svg+xml" href="/favicon-black.svg" media="(prefers-color-scheme: light)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,9 @@
       }}
     }
   </script>
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.6.15/dist/hls.min.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #000; color: #fff; font-family: 'Barlow', sans-serif; overflow-x: hidden; }
@@ -29,11 +28,6 @@
       50%  { filter: blur(5px);  opacity: 0.5; transform: translateY(-5px); }
       100% { filter: blur(0px);  opacity: 1;   transform: translateY(0); }
     }
-    @keyframes fadeInUp {
-      0%   { filter: blur(10px); opacity: 0; transform: translateY(30px); }
-      100% { filter: blur(0px);  opacity: 1;   transform: translateY(0); }
-    }
-
     .liquid-glass {
       background: rgba(255,255,255,0.01); background-blend-mode: luminosity;
       backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
@@ -47,49 +41,31 @@
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
     }
-    .liquid-glass-strong {
-      background: rgba(255,255,255,0.01); background-blend-mode: luminosity;
-      backdrop-filter: blur(50px); -webkit-backdrop-filter: blur(50px);
-      border: none; box-shadow: 4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.15);
-      position: relative; overflow: hidden;
-    }
-    .liquid-glass-strong::before {
-      content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1.4px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.5) 100%);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
-    }
-    .section-heading { font-family: 'Instrument Serif', serif; font-style: italic; font-size: clamp(2.25rem, 5vw, 3.75rem); color: white; letter-spacing: -0.02em; line-height: 0.9; }
-    @media (max-width: 1366px) and (min-width: 1025px) {
-      html { zoom: 0.82; }
-    }
+    .section-badge { border-radius: 9999; padding: 6px 16px; font-size: 12px; font-weight: 500; color: white; font-family: 'Barlow', sans-serif; display: inline-block; }
   </style>
 </head>
 <body class="bg-black text-white">
   <div id="root"></div>
   <script type="text/babel" src="devnest/shared.jsx"></script>
   <script type="text/babel" src="devnest/Navbar.jsx"></script>
-  <script type="text/babel" src="devnest/ProcessPage.jsx"></script>
+  <script type="text/babel" src="devnest/PrivacyPage.jsx"></script>
+  <script type="text/babel" src="devnest/CtaFooter.jsx"></script>
   <script type="text/babel">
-    const { LangProvider, Navbar, ProcessPage } = window;
+    const { LangProvider, Navbar, PrivacyPage, CtaFooter } = window;
     function App() {
       return (
         <LangProvider>
-          <div style={{background:'#000', minHeight:'100vh'}}>
+          <div style={{background:'#000', minHeight:'100vh', display: 'flex', flexDirection: 'column'}}>
             <Navbar />
-            <ProcessPage />
+            <div style={{flex: 1}}>
+              <PrivacyPage />
+            </div>
+            <CtaFooter />
           </div>
         </LangProvider>
       );
     }
     ReactDOM.createRoot(document.getElementById('root')).render(<App />);
   </script>
-  <template id="__bundler_thumbnail">
-    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
-      <rect width="120" height="80" fill="#000"/>
-      <text x="60" y="44" font-family="serif" font-style="italic" font-size="10" fill="white" text-anchor="middle">Devnest</text>
-    </svg>
-  </template>
 </body>
 </html>

@@ -74,12 +74,25 @@ const pricingI18n = {
         color: 'rgba(200,140,80,0.15)'
       }
     ]
+  },
+  customWork: {
+    en: {
+      heading: 'Need something else?',
+      sub: 'Looking for a specialized solution or unique scope? We specialize in high-complexity custom projects.',
+      cta: 'Request Custom Work'
+    },
+    es: {
+      heading: '¿Necesitas algo más?',
+      sub: '¿Buscas una solución especializada o un alcance único? Nos especializamos en proyectos personalizados de alta complejidad.',
+      cta: 'Solicitar Trabajo a Medida'
+    }
   }
 };
 
 function PricingPage() {
   const { lang } = useLang();
   const plans = t(pricingI18n.plans, lang);
+  const custom = t(pricingI18n.customWork, lang);
 
   return (
     <div style={{ background: '#000', minHeight: '80vh', paddingTop: 120 }}>
@@ -104,7 +117,7 @@ function PricingPage() {
         </div>
 
         {/* Pricing Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20, marginBottom: 40 }}>
           {plans.map((plan, i) => (
             <FadeIn key={plan.title} delay={i * 120} y={30} style={{ display: 'flex' }}>
               <div className="liquid-glass" style={{ flex: 1, borderRadius: 20, padding: 32, display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
@@ -139,6 +152,25 @@ function PricingPage() {
             </FadeIn>
           ))}
         </div>
+
+        {/* Custom Work Section */}
+        <FadeIn delay={600} y={40}>
+          <div className="liquid-glass" style={{ borderRadius: 24, padding: '48px 40px', marginTop: 40, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '120%', height: '120%', background: 'radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+            
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontStyle: 'italic', fontSize: 'clamp(2rem, 4vw, 2.75rem)', color: 'white', marginBottom: 16 }}>
+              {custom.heading}
+            </h2>
+            <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: 17, color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, maxWidth: 600, marginBottom: 32 }}>
+              {custom.sub}
+            </p>
+            
+            <a href={`https://wa.me/522203305165?text=${encodeURIComponent("Hi, I'm interested in your services")}`} className="liquid-glass-strong" style={{ borderRadius: 9999, padding: '14px 28px', background: 'white', color: 'black', textDecoration: 'none', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 15, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 10, transition: 'transform 0.2s' }}>
+              {custom.cta} <ArrowUpRight size={16} />
+            </a>
+          </div>
+        </FadeIn>
+
       </div>
     </div>
   );

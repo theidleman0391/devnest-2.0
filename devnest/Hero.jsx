@@ -31,7 +31,7 @@ function Hero() {
       <div className="relative z-10 flex flex-col items-center text-center px-4 h-full pt-[140px] md:pt-[120px]">
 
         {/* Badge */}
-        <div style={{ ...heroAnim(200), marginBottom: 32 }}>
+        <div style={{ ...heroAnim(200), marginBottom: 32, opacity: 0 }}>
           <span className="liquid-glass" style={{ borderRadius: 9999, padding: '4px 4px', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
             <span style={{ background: 'white', color: 'black', borderRadius: 9999, padding: '4px 12px', fontSize: 11, fontWeight: 600, fontFamily: "'Barlow', sans-serif" }}>{t(heroI18n.newBadge, lang)}</span>
             <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', paddingRight: 10, fontFamily: "'Barlow', sans-serif", fontWeight: 400 }}>{t(heroI18n.badge, lang)}</span>
@@ -68,7 +68,7 @@ function Hero() {
 
         {/* Subtext */}
         <p style={{
-          ...heroAnim(800), fontSize: 'clamp(14px, 1.8vw, 16px)',
+          ...heroAnim(800), opacity: 0, fontSize: 'clamp(14px, 1.8vw, 16px)',
           color: 'rgba(255,255,255,0.8)', fontFamily: "'Barlow', sans-serif",
           fontWeight: 300, lineHeight: 1.6, maxWidth: 460, marginBottom: 36
         }}>
@@ -76,7 +76,7 @@ function Hero() {
         </p>
 
         {/* CTAs */}
-        <div style={{ ...heroAnim(1100), display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ ...heroAnim(1100), display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0 }}>
           <a href="Pricing.html" className="liquid-glass-strong" style={{
             borderRadius: 9999, padding: '10px 22px', background: 'none', border: 'none', textDecoration: 'none',
             color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif",
@@ -87,7 +87,7 @@ function Hero() {
         </div>
 
         {/* Partners */}
-        <div className="hero-partners" style={{ ...heroAnim(1400), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+        <div className="hero-partners" style={{ ...heroAnim(1400), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, opacity: 0 }}>
           <span className="liquid-glass" style={{ borderRadius: 9999, padding: '6px 16px', fontSize: 11, color: 'rgba(255,255,255,0.5)', fontFamily: "'Barlow', sans-serif" }}>
             {t(heroI18n.tech, lang)}
           </span>
