@@ -1,24 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/Services", "destination": "/servicios", "permanent": true },
-    { "source": "/Pricing", "destination": "/precios", "permanent": true },
-    { "source": "/Work", "destination": "/portafolio", "permanent": true },
-    { "source": "/Process", "destination": "/proceso", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/servicios", "destination": "/Services.html" },
-    { "source": "/precios", "destination": "/Pricing.html" },
-    { "source": "/portafolio", "destination": "/Work.html" },
-    { "source": "/proceso", "destination": "/Process.html" },
-    { "source": "/terminos", "destination": "/Terminos.html" },
-    { "source": "/privacidad", "destination": "/Privacidad.html" }
-  ],
-  "buildCommand": "exit 0",
-  "outputDirectory": ".",
   "headers": [
-
     {
       "source": "/(.*)",
       "headers": [

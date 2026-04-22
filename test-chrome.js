@@ -17,16 +17,16 @@ const puppeteer = require('puppeteer');
   });
 
   try {
-    console.log('Navigating to http://localhost:8080/Devnest%20Landing.html...');
-    await page.goto('http://localhost:8080/Devnest%20Landing.html', { waitUntil: 'networkidle0' });
+    console.log('Navigating to http://localhost:8080/index.html...');
+    await page.goto('http://localhost:8080/index.html', { waitUntil: 'networkidle0' });
     console.log('Finished waiting.');
   } catch (err) {
     console.error('[GOTO ERROR]', err);
   }
 
   try {
-    console.log('Navigating to http://localhost:8080/Work.html...');
-    await page.goto('http://localhost:8080/Work.html', { waitUntil: 'networkidle0' });
+    console.log('Navigating to http://localhost:8080/portafolio.html...');
+    await page.goto('http://localhost:8080/portafolio.html', { waitUntil: 'networkidle0' });
     console.log('Finished waiting.');
   } catch (err) {
     console.error('[GOTO ERROR]', err);
