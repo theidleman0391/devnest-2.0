@@ -4,7 +4,7 @@ const { FadeIn, BlurText, SectionBadge, ArrowUpRight, useLang, t } = window;
 const workI18n = {
   badge: { en: 'Work', es: 'Trabajo' },
   heading: { en: 'Selected Projects', es: 'Proyectos Destacados' },
-  sub: { en: "A handful of the things we've built. Each one a collaboration between human ambition and machine precision.", es: 'Una selección de lo que hemos construido. Cada uno, una colaboración entre la ambición humana y la precisión de la máquina.' },
+  sub: { en: "Discover our projects that drive growth for brands and companies.", es: 'Descubre nuestros proyectos que impulsan el crecimiento de marcas y empresas.' },
   viewProject: { en: 'View project', es: 'Ver proyecto' },
   footerHeading: { en: 'Want results like these?', es: '¿Quieres resultados como estos?' },
   footerSub: { en: "Let's talk about your project.", es: 'Hablemos de tu proyecto.' },

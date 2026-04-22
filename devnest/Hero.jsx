@@ -75,9 +75,8 @@ function Hero() {
           {t(heroI18n.sub, lang)}
         </p>
 
-        {/* CTAs */}
         <div style={{ ...heroAnim(1100), display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0 }}>
-          <a href="Pricing.html" className="liquid-glass-strong" style={{
+          <a href="/precios" className="liquid-glass-strong" style={{
             borderRadius: 9999, padding: '10px 22px', background: 'none', border: 'none', textDecoration: 'none',
             color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif",
             fontSize: 14, fontWeight: 500, display: 'inline-flex', alignItems: 'center', gap: 7

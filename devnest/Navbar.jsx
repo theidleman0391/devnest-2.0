@@ -4,18 +4,18 @@ const { ArrowUpRight, useLang, t } = window;
 
 const NAV_LINKS_I18N = {
   en: [
-    { label: 'Home', href: 'index.html' },
-    { label: 'Services', href: 'Services.html' },
-    { label: 'Work', href: 'Work.html' },
-    { label: 'Process', href: 'Process.html' },
-    { label: 'Pricing', href: 'Pricing.html' },
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/servicios' },
+    { label: 'Work', href: '/portafolio' },
+    { label: 'Process', href: '/proceso' },
+    { label: 'Pricing', href: '/precios' },
   ],
   es: [
-    { label: 'Inicio', href: 'index.html' },
-    { label: 'Servicios', href: 'Services.html' },
-    { label: 'Trabajo', href: 'Work.html' },
-    { label: 'Proceso', href: 'Process.html' },
-    { label: 'Precios', href: 'Pricing.html' },
+    { label: 'Inicio', href: '/' },
+    { label: 'Servicios', href: '/servicios' },
+    { label: 'Trabajo', href: '/portafolio' },
+    { label: 'Proceso', href: '/proceso' },
+    { label: 'Precios', href: '/precios' },
   ]
 };
 
@@ -40,7 +40,7 @@ const mobileMenuStyles = `
 `;
 
 function Navbar() {
-  const current = window.location.pathname.split('/').pop() || '';
+  const current = window.location.pathname;
   const [isOpen, setIsOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const { lang, setLang } = useLang();
@@ -79,7 +79,7 @@ function Navbar() {
           {/* Desktop Nav */}
           <div className="liquid-glass hidden md:flex items-center gap-[2px] rounded-full p-[6px]">
             {NAV_LINKS.map(link => {
-              const isActive = current === link.href || (current === '' && link.href === 'index.html');
+              const isActive = current === link.href || (current === '/' && link.href === '/') || (current === '' && link.href === '/');
               return (
                 <a key={link.href} href={link.href} style={{
                   padding: '8px 14px', fontSize: 13, fontWeight: 500,
@@ -152,7 +152,7 @@ function Navbar() {
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'center' }}>
             {NAV_LINKS.map((link, i) => {
-              const isActive = current === link.href || (current === '' && link.href === 'index.html');
+              const isActive = current === link.href || (current === '/' && link.href === '/') || (current === '' && link.href === '/');
               return (
                 <a
                   key={link.href}
