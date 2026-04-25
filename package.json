@@ -1,7 +1,22 @@
 {
+  "scripts": {
+    "build:js": "node build.mjs",
+    "build:css": "tailwindcss -i src/tailwind.css -o dist/styles.css --minify",
+    "build:fonts": "node scripts/copy-fonts.mjs",
+    "build:assets": "node scripts/compress-assets.mjs",
+    "build": "npm run build:js && npm run build:css && npm run build:fonts",
+    "watch:css": "tailwindcss -i src/tailwind.css -o dist/styles.css --watch",
+    "dev": "node build.mjs --watch"
+  },
   "dependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-react": "^7.28.5",
     "puppeteer": "^24.41.0"
+  },
+  "devDependencies": {
+    "@fontsource/barlow": "^5.2.8",
+    "@fontsource/instrument-serif": "^5.2.8",
+    "esbuild": "^0.24.0",
+    "ffmpeg-static": "^5.3.0",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.14"
   }
 }

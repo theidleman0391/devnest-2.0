@@ -5,13 +5,13 @@ const footerI18n = {
   copy: { en: '© 2026 Devnest. All rights reserved.', es: '© 2026 Devnest. Todos los derechos reservados.' },
   links: {
     en: [
-      { label: 'Privacy', href: '/privacidad' },
-      { label: 'Terms', href: '/terminos' },
+      { label: 'Privacy', href: '/privacidad.html' },
+      { label: 'Terms', href: '/terminos.html' },
       { label: 'Contact', href: 'https://wa.me/522203305165' }
     ],
     es: [
-      { label: 'Privacidad', href: '/privacidad' },
-      { label: 'Términos', href: '/terminos' },
+      { label: 'Privacidad', href: '/privacidad.html' },
+      { label: 'Términos', href: '/terminos.html' },
       { label: 'Contacto', href: 'https://wa.me/522203305165' }
     ]
 

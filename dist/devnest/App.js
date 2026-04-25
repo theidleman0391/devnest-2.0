@@ -1,0 +1,3 @@
+(()=>{
+const{LangProvider,Navbar,Hero,StartSection,FeaturesChess,FeaturesGrid,Stats,CtaFooter}=window;function App(){return React.createElement(LangProvider,null,React.createElement("div",{style:{background:"#000",minHeight:"100vh",overflowX:"hidden"}},React.createElement(Navbar,null),React.createElement(Hero,null),React.createElement("div",{style:{background:"#000",position:"relative",zIndex:10}},React.createElement(FeaturesChess,null),React.createElement(FeaturesGrid,null),React.createElement(Stats,null),React.createElement(StartSection,null),React.createElement(CtaFooter,null))))}const root=ReactDOM.createRoot(document.getElementById("root"));root.render(React.createElement(App,null));
+})();

@@ -7,20 +7,11 @@
   <link rel="canonical" href="https://devnest.lat/privacidad">
   <link rel="icon" type="image/svg+xml" href="favicon-white.svg" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/svg+xml" href="favicon-black.svg" media="(prefers-color-scheme: light)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: { extend: {
-        fontFamily: { heading: ["'Instrument Serif'","serif"], body: ["'Barlow'","sans-serif"] }
-      }}
-    }
-  </script>
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+  <link rel="preload" href="dist/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="dist/fonts.css">
+  <link rel="stylesheet" href="dist/styles.css">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin defer></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin defer></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #000; color: #fff; font-family: 'Barlow', sans-serif; overflow-x: hidden; }
@@ -47,26 +38,10 @@
 </head>
 <body class="bg-black text-white">
   <div id="root"></div>
-  <script type="text/babel" src="devnest/shared.jsx"></script>
-  <script type="text/babel" src="devnest/Navbar.jsx"></script>
-  <script type="text/babel" src="devnest/PrivacyPage.jsx"></script>
-  <script type="text/babel" src="devnest/CtaFooter.jsx"></script>
-  <script type="text/babel">
-    const { LangProvider, Navbar, PrivacyPage, CtaFooter } = window;
-    function App() {
-      return (
-        <LangProvider>
-          <div style={{background:'#000', minHeight:'100vh', display: 'flex', flexDirection: 'column'}}>
-            <Navbar />
-            <div style={{flex: 1}}>
-              <PrivacyPage />
-            </div>
-            <CtaFooter />
-          </div>
-        </LangProvider>
-      );
-    }
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-  </script>
+  <script src="dist/devnest/shared.js" defer></script>
+  <script src="dist/devnest/Navbar.js" defer></script>
+  <script src="dist/devnest/PrivacyPage.js" defer></script>
+  <script src="dist/devnest/CtaFooter.js" defer></script>
+  <script src="dist/devnest/pages/PrivacidadApp.js" defer></script>
 </body>
 </html>

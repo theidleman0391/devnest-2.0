@@ -95,8 +95,11 @@ function ProcessPage() {
     <div style={{ background: '#000', minHeight: '100vh', paddingTop: 120, position: 'relative', overflow: 'hidden' }}>
       {/* BG video — top-anchored, slow playback */}
       <FadeIn delay={0} y={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 'auto', zIndex: 0 }}>
-        <video autoPlay loop muted playsInline src="/stripe1.mp4"
-          style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
+        <video autoPlay loop muted playsInline preload="metadata" poster="/dist/assets/stripe1-poster.webp"
+          style={{ width: '100%', height: 'auto', objectFit: 'contain' }}>
+          <source src="/dist/assets/stripe1.webm" type="video/webm" />
+          <source src="/dist/assets/stripe1.mp4" type="video/mp4" />
+        </video>
       </FadeIn>
       {/* Dark overlay — full video area for readability */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '100%', background: 'rgba(0,0,0,0.72)', zIndex: 1 }} />
@@ -166,7 +169,7 @@ function ProcessPage() {
               <a href="https://wa.me/522203305165" className="liquid-glass-strong" style={{ borderRadius: 9999, padding: '12px 28px', background: 'none', border: 'none', textDecoration: 'none', color: 'white', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 14, fontWeight: 500, display: 'inline-flex', alignItems: 'center', gap: 7 }}>
                 {t(processI18n.contact, lang)} <ArrowUpRight size={15} />
               </a>
-              <a href="Work.html" style={{ borderRadius: 9999, padding: '12px 28px', background: 'white', color: 'black', textDecoration: 'none', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 14, fontWeight: 500, display: 'inline-flex', alignItems: 'center' }}>
+              <a href="/portafolio.html" style={{ borderRadius: 9999, padding: '12px 28px', background: 'white', color: 'black', textDecoration: 'none', cursor: 'pointer', fontFamily: "'Barlow', sans-serif", fontSize: 14, fontWeight: 500, display: 'inline-flex', alignItems: 'center' }}>
                 {t(processI18n.viewWork, lang)}
               </a>
             </div>

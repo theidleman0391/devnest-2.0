@@ -94,8 +94,11 @@ function WorkPage() {
 
       {/* BG video — blends into gradient */}
       <FadeIn delay={0} y={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 'auto', zIndex: 1 }}>
-        <video autoPlay loop muted playsInline src="/stripe2.mp4"
-          style={{ width: '100%', height: 'auto', objectFit: 'contain', mixBlendMode: 'screen', opacity: 0.85 }} />
+        <video autoPlay loop muted playsInline preload="metadata" poster="/dist/assets/stripe2-poster.webp"
+          style={{ width: '100%', height: 'auto', objectFit: 'contain', mixBlendMode: 'screen', opacity: 0.85 }}>
+          <source src="/dist/assets/stripe2.webm" type="video/webm" />
+          <source src="/dist/assets/stripe2.mp4" type="video/mp4" />
+        </video>
       </FadeIn>
       {/* Subtle dark overlay for text readability */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '100%', background: 'rgba(0,0,0,0.45)', zIndex: 2, pointerEvents: 'none' }} />

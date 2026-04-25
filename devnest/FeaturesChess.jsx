@@ -1,8 +1,8 @@
 
 const { SectionBadge, FadeIn, useLang, t } = window;
 
-const GIF_1 = 'https://motionsites.ai/assets/hero-finlytic-preview-CV9g0FHP.gif';
-const GIF_2 = 'https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif';
+const GIF_1 = '/dist/assets/feature1.webp';
+const GIF_2 = '/dist/assets/feature2.webp';
 
 const chessI18n = {
   badge: { en: 'Capabilities', es: 'Capacidades' },
@@ -26,7 +26,7 @@ function ChessRow({ title, body, gif, reverse }) {
         <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: 15, lineHeight: 1.7 }}>{body}</p>
       </div>
       <div className="liquid-glass" style={{ flex: '1 1 360px', maxWidth: 520, borderRadius: 16, overflow: 'hidden', aspectRatio: '16/10' }}>
-        <img src={gif} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+        <img src={gif} alt={title} loading="lazy" decoding="async" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
       </div>
     </FadeIn>
   );

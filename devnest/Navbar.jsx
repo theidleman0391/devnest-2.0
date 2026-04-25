@@ -4,18 +4,18 @@ const { ArrowUpRight, useLang, t } = window;
 
 const NAV_LINKS_I18N = {
   en: [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/servicios' },
-    { label: 'Work', href: '/portafolio' },
-    { label: 'Process', href: '/proceso' },
-    { label: 'Pricing', href: '/precios' },
+    { label: 'Home', href: '/index.html' },
+    { label: 'Services', href: '/servicios.html' },
+    { label: 'Work', href: '/portafolio.html' },
+    { label: 'Process', href: '/proceso.html' },
+    { label: 'Pricing', href: '/precios.html' },
   ],
   es: [
-    { label: 'Inicio', href: '/' },
-    { label: 'Servicios', href: '/servicios' },
-    { label: 'Trabajo', href: '/portafolio' },
-    { label: 'Proceso', href: '/proceso' },
-    { label: 'Precios', href: '/precios' },
+    { label: 'Inicio', href: '/index.html' },
+    { label: 'Servicios', href: '/servicios.html' },
+    { label: 'Trabajo', href: '/portafolio.html' },
+    { label: 'Proceso', href: '/proceso.html' },
+    { label: 'Precios', href: '/precios.html' },
   ]
 };
 
@@ -71,7 +71,11 @@ function Navbar() {
           {/* Logo */}
           <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
-              <img src="logo.png" alt="Logo" style={{ width: 56, height: 56, objectFit: 'cover', objectPosition: '47% center' }} />
+              <picture>
+                <source srcSet="dist/assets/logo.avif" type="image/avif" />
+                <source srcSet="dist/assets/logo.webp" type="image/webp" />
+                <img src="logo.png" alt="Logo" width="56" height="56" loading="eager" decoding="async" style={{ width: 56, height: 56, objectFit: 'cover', objectPosition: '47% center' }} />
+              </picture>
             </div>
             <span style={{ fontFamily: "'Instrument Serif', serif", fontStyle: 'italic', fontSize: 20, color: 'white', letterSpacing: '-0.02em' }}>Devnest</span>
           </a>
