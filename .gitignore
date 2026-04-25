@@ -3,3 +3,5 @@
 node_modules/
 temp/
 .DS_Store
+*.log
+npm-debug.log*

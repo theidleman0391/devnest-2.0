@@ -1,10 +1,13 @@
-const { LangProvider, Navbar, WorkPage } = window;
+const { LangProvider, Navbar, WorkPage, CtaFooter } = window;
 function App() {
   return (
     <LangProvider>
-      <div style={{ background: '#000', minHeight: '100vh' }}>
+      <div style={{ background: '#000', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Navbar />
-        <WorkPage />
+        <div style={{ flex: 1 }}>
+          <WorkPage />
+        </div>
+        <CtaFooter />
       </div>
     </LangProvider>
   );
