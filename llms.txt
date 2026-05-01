@@ -1,0 +1,25 @@
+# DevNest
+
+> Servicios personalizados de diseño web y desarrollo de software.
+
+DevNest ofrece servicios profesionales de diseño web y desarrollo de software a medida, especializándose en la creación de aplicaciones web y móviles personalizadas. Nos enfocamos en entregar soluciones digitales únicas con tiempos de entrega extremadamente rápidos (desde 5 días).
+
+Este archivo sirve como guía para modelos de lenguaje (LLMs) que interactúan con información sobre DevNest.
+
+## Enlaces Principales
+
+- [Página Principal](https://devnest.lat/): Diseño web y desarrollo de software a medida.
+- [Servicios](https://devnest.lat/servicios): Detalles sobre diseño con IA, desarrollo web/apps y landing pages.
+- [Portafolio](https://devnest.lat/portafolio): Ejemplos de proyectos destacados como Innovamob y ServiciosVIP.
+- [Proceso](https://devnest.lat/proceso): Nuestro método de trabajo de 5 días desde la idea al lanzamiento.
+- [Precios](https://devnest.lat/precios): Información sobre inversión para diferentes tipos de proyectos en MXN.
+
+## Contenido Completo para LLMs
+
+Para un contexto exhaustivo que incluye todo el texto del sitio, descripciones de servicios y detalles de proyectos, consulta el archivo completo:
+
+- [Contenido Completo (Full Context)](https://devnest.lat/llms-full.txt): Versión extendida para entrenamiento y análisis profundo.
+
+---
+
+Este archivo fue optimizado para devnest.lat para mejorar su visibilidad y comprensión por parte de IA y modelos de lenguaje.

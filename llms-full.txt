@@ -1,0 +1,89 @@
+# DevNest - Soluciones Digitales a Medida
+
+> Diseño web personalizado y desarrollo de software de alto impacto.
+
+DevNest ofrece servicios profesionales de diseño web y desarrollo de software a medida, especializándose en la creación de aplicaciones web personalizadas y aplicaciones móviles. Atendemos a empresas e individuos que buscan soluciones digitales únicas, desde el concepto inicial hasta el despliegue final. Nuestros servicios están diseñados para satisfacer necesidades específicas del cliente, garantizando un alto grado de personalización y funcionalidad.
+
+Con un enfoque en entregar valor rápidamente, DevNest destaca tiempos de entrega acelerados, con páginas web entregadas en tan solo 5 días hábiles. Nuestro objetivo es ser una solución integral para todas las necesidades de desarrollo digital, desde sitios web sencillos hasta aplicaciones de software complejas.
+
+## Información de Contacto
+- **Sitio Web**: [https://devnest.lat](https://devnest.lat)
+- **WhatsApp**: [+52 220 330 5165](https://wa.me/522203305165)
+- **Ubicación**: México
+
+---
+
+## Servicios Principales
+
+### 01. Diseño con IA
+Cada píxel, perfeccionado por la inteligencia. Nos entrenamos con miles de sitios de alto rendimiento para crear diseños que son bellos y estratégicamente diseñados para convertir. Tu marca, elevada por IA.
+- **Incluye**: Identidad de marca, Sistemas de diseño, Diseños responsivos, Movimiento y micro-interacciones.
+
+### 02. Desarrollo Web y Apps
+Código que rinde tan bien como se ve. Desde plataformas web full-stack hasta aplicaciones nativas para Android, construimos software rápido, escalable y mantenible que tus usuarios amarán desde el primer día.
+- **Incluye**: React / Next.js, Backend Node / Python, iOS y Android, Integraciones API.
+
+### 03. Landing Pages
+Una página. Impacto máximo. Landing pages de alta conversión construidas y lanzadas en días. Cada elemento está optimizado para una sola cosa: convertir visitantes en clientes.
+- **Incluye**: Lista para A/B testing, Layout CRO-optimizado, Carga en menos de 2s, Analytics integrado.
+
+---
+
+## Nuestro Proceso (De la idea al lanzamiento en 5 días)
+
+1. **Día 1: Descubrimiento**: Aprendemos todo sobre tu marca, audiencia y objetivos. Auditoría de marca, investigación de competencia y alineación de objetivos.
+2. **Día 2: Wireframes**: Generación de múltiples conceptos de diseño con IA en horas. Estructura primero, píxeles después.
+3. **Días 2–3: Diseño**: Diseño visual completo basado en tu identidad. Mockups de alta fidelidad y sistema de diseño.
+4. **Días 3–4: Desarrollo**: Código limpio en React / Next.js. Construimos para velocidad, accesibilidad y escala.
+5. **Día 5: Lanzamiento**: Despliegue, pruebas y configuración de Analytics y SEO.
+
+---
+
+## Precios e Inversión (en MXN)
+
+- **Landing Pages ($700 MXN)**: Ideal para conversiones rápidas. Incluye diseño de una sola página, optimización y SEO básico.
+- **Tienda Online y E-Commerce ($1,000 MXN)**: Tu negocio profesionalizado. Incluye catálogo de productos, pasarela de pago y panel de administración.
+- **Aplicaciones Móviles (Desde $1,500 MXN)**: Tu marca en los bolsillos de tus clientes. iOS y Android con rendimiento nativo y notificaciones push.
+- **Software Personalizado (Desde $2,500 MXN)**: Automatiza tus procesos con arquitectura personalizada e integraciones API.
+
+---
+
+## Portafolio de Proyectos
+
+### Innovamob (Plataforma Web)
+Presencia de marca y web completa para un proveedor de soluciones móviles de nueva generación. Diseñado y entregado en menos de una semana.
+- **Tags**: Branding, Diseño Web, Desarrollo.
+
+### ServiciosVIP (App Android)
+App de marketplace de servicios premium con UX fluida y reservas en tiempo real.
+- **Tags**: Android, UI/UX, Diseño de App.
+
+### Roofconnect (Aplicación Web)
+CRM a medida con gestión de pipeline intuitiva y seguimiento de clientes.
+- **Tags**: CRM, SaaS, Full-Stack.
+
+---
+
+## Por Qué Elegir DevNest
+- **Días, No Meses**: Redefinimos la velocidad del concepto al lanzamiento.
+- **Obsesivamente Diseñado**: Cada detalle es refinado hasta que se siente inevitable.
+- **Hecho para Convertir**: Decisiones de diseño respaldadas por datos y rendimiento.
+- **Seguridad Incluida**: SSL, mitigación DDoS y cumplimiento normativo de serie.
+
+## Estadísticas de Impacto
+- **30+**: Sitios lanzados con éxito.
+- **98%**: Satisfacción del cliente.
+- **3.2x**: Incremento promedio en conversiones.
+- **5 días**: Tiempo promedio de entrega.
+
+## Información Legal
+
+### Política de Privacidad
+En DevNest nos comprometemos a proteger su información personal. Recopilamos datos que usted nos proporciona voluntariamente para responder a sus consultas. No compartimos su información con terceros sin su consentimiento, salvo por obligación legal.
+
+### Términos y Condiciones
+Nuestros servicios se rigen por un compromiso de calidad y plazos de entrega rápidos. El uso de nuestro sitio web implica la aceptación de estas prácticas y la intención de establecer una relación profesional basada en la transparencia.
+
+---
+
+Este archivo proporciona el contexto completo de DevNest para modelos de lenguaje (LLMs).

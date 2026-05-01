@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://devnest.lat/sitemap.xml
+LLMS: https://devnest.lat/llms.txt
